@@ -1,0 +1,254 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #4BA87D;
+}
+
+body {
+    font-family: "Raleway", serif;
+    font-style: normal;
+}
+
+.font2 {
+    font-family: "Playfair Display", sans-serif;
+}
+
+header {
+    .menu {
+        .menu-n a {
+            border-bottom: 5px solid var(--main-color);
+        }
+
+        a {
+            color: black;
+            font-weight: 800;
+            font-size: 1.0625rem;
+            line-height: 20px;
+        }
+    }
+
+    .btn {
+        font-size: 1.0625rem;
+        border-bottom: 5px solid transparent;
+    }
+}
+
+.title-bg {
+    @media screen and (min-width: 576px) {
+        background: url(/images/bg1.png) center center no-repeat;
+        background-size: contain;
+    }
+}
+
+#sec-title {
+    #title {
+        margin-top: 7rem;
+
+        @media screen and (min-width: 576px) {
+            .title-text {
+                width: 500px;
+                left: 14%;
+            }
+        }        
+
+        .title-img img {
+            height: 80%;
+        }
+    }
+}
+
+.main-bg {
+    background: url("/images/bg.png") center/ cover;
+    background-repeat: no-repeat;
+    height: 155vh;
+
+    @media screen and (max-width: 576px) {
+        height: 230vh;
+    }
+}
+
+#sec-video {
+    #video {
+        max-width: 1000px;
+        margin-top: 8.4rem;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    #sec-video {
+        margin-top: 8rem;
+
+        #video {
+            margin-top: 3rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        .btn {
+            padding: .6rem 1.2rem;
+        }
+    }
+}
+
+#sec-articles {
+    margin-top: 5rem;
+
+    .card {
+        width: 320px;
+        height: 450px;
+
+        a {
+            color: var(--main-color);
+            font-weight: 800;
+        }
+
+        .card-body {
+            min-height: 400px;
+        }
+    }
+
+    #card2 {
+        margin-top: 5rem;
+
+        @media screen and (max-width: 576px) {
+            margin-top: 1rem;
+        }
+    }
+
+    #sec3-text {
+        margin-top: 8rem;
+
+        @media screen and (max-width: 576px) {
+            margin-top: 1rem;
+        }
+
+        p {
+            font-size: 20px;
+        }
+    }
+}
+
+#sec-photos {
+    margin-top: 8rem;
+
+    .card p {
+        font-weight: 700;
+    }
+
+    input {
+        border: 1.75px solid #9f9f9f;
+        padding-block: 1.2rem;
+    }
+
+    p {
+        color: var(--main-color);
+    }
+}
+
+#sec-brands {
+    img {
+        height: 70%;
+        width: auto;
+    }
+}
+
+#sec-get-started {
+    margin-top: 6rem;
+    height: 30vh;
+
+    @media screen and (max-width: 576px) {
+        height: 36vh;
+    }
+}
+
+#footer {
+    #logo {
+        height: 40px;
+        width: auto;
+    }
+
+    ul li {
+        margin-block: 5px;
+    }
+
+    ul li a {
+        color: black;
+        font-weight: 700;
+    }
+
+    hr {
+        color: #9f9f9f;
+    }
+
+    .footer-text {
+        font-weight: 700;
+    }
+}
+
+/* --- 通用設定 --- */
+.main-color {
+    color: var(--main-color);
+}
+
+.main-bg-color {
+    background-color: var(--main-color);
+}
+
+.btn {
+    font-weight: 900;
+    font-size: 1.375rem;
+    line-height: 1.5625rem;
+    padding: 1.2rem 2.4rem;
+}
+
+.btn1 {
+    background: var(--main-color);
+    color: #fff;
+}
+
+.btn2 {
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+}
+
+.btn3 {
+    color: var(--main-color);
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.h1,
+h1 {
+    font-size: 3.75rem;
+    font-weight: 900;
+    line-height: 4.375rem;
+}
+
+h3 {
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 3.25rem;
+}
+
+h4 {
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 2.5rem;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.625rem;
+    font-weight: 400;
+}
